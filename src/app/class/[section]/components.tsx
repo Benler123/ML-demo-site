@@ -13,7 +13,7 @@ export function Hero({section}: {section: string}) {
   return (
     <div className="w-full h-screen flex flex-col items-center justify-center px-4">
       <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-center" style={{ fontSize: "clamp(2rem, 5vw, 5rem)" }}>
-        <span className='text-yellow-400'>{formattedSection}</span> Projects
+        <span className='text-primary'>{formattedSection}</span> Projects
       </h1>
       <Button
         className="mt-6 px-4 py-2"
