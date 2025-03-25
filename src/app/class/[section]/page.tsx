@@ -3,11 +3,14 @@ import { Projects } from "@/app/scripts/parse_projects";
 import { Hero, ProjectList } from "./components";
 import { Navbar } from "@/components/ui/NavBar";
 
-export default async function Page({ params }: { params: { class: string } }) {
-  // Convert params to a resolved value using Promise.resolve
-  const resolvedParams = await Promise.resolve(params);
-  const section = resolvedParams.class;
+interface SectionPageProps{
+    params: Promise<{ section: string }>;
+}
+
+export default async function Page({ params }:  SectionPageProps) {
   
+  const { section }  = await params;
+  console.log(section);
   if (!section) {
     return (
       <div>
