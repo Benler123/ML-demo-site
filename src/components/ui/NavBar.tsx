@@ -10,12 +10,12 @@ export function Navbar() {
     <nav className="bg-secondary text-white p-4">
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/"> 
-          <h1 className="font-bold text-primary">Home</h1>
+          <h1 className="font-bold text-secondary-foreground">Home</h1>
         </Link>
         <NavigationMenu>
           <NavigationMenuList>
             <NavigationMenuItem>
-              <NavigationMenuTrigger className="bg-secondary text-white">Fall 2024</NavigationMenuTrigger>
+              <NavigationMenuTrigger className="bg-secondary text-secondary-foreground">Fall 2024</NavigationMenuTrigger>
               <NavigationMenuContent
               className="absolute shadow-lg rounded-md"
               style={{
